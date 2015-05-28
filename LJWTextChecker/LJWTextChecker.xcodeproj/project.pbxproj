@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		723AAE911B15D4C0005460FB /* LJWKeyboardHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 723AAE8A1B15D4C0005460FB /* LJWKeyboardHandler.m */; };
+		723AAE921B15D4C0005460FB /* UIView+FirstResponderNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 723AAE8C1B15D4C0005460FB /* UIView+FirstResponderNotification.m */; };
+		723AAE931B15D4C0005460FB /* UIViewController+LJWKeyboardHandlerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 723AAE8E1B15D4C0005460FB /* UIViewController+LJWKeyboardHandlerHelper.m */; };
+		723AAE941B15D4C0005460FB /* UIWindow+LJWPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723AAE901B15D4C0005460FB /* UIWindow+LJWPresentViewController.m */; };
+		728AD0181B109EE800D24F46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 728AD0171B109EE800D24F46 /* main.m */; };
+		728AD01B1B109EE800D24F46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 728AD01A1B109EE800D24F46 /* AppDelegate.m */; };
+		728AD01E1B109EE800D24F46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728AD01D1B109EE800D24F46 /* ViewController.m */; };
+		728AD0211B109EE800D24F46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728AD01F1B109EE800D24F46 /* Main.storyboard */; };
+		728AD0231B109EE800D24F46 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 728AD0221B109EE800D24F46 /* Images.xcassets */; };
+		728AD0261B109EE800D24F46 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 728AD0241B109EE800D24F46 /* LaunchScreen.xib */; };
+		728AD0321B109EE800D24F46 /* LJWTextCheckerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 728AD0311B109EE800D24F46 /* LJWTextCheckerTests.m */; };
+		728AD07F1B11D71A00D24F46 /* LJWBaseCheckedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 728AD0691B11D71A00D24F46 /* LJWBaseCheckedTextField.m */; };
+		728AD0801B11D71A00D24F46 /* LJWCarNumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 728AD06B1B11D71A00D24F46 /* LJWCarNumberTextField.m */; };
+		728AD0811B11D71A00D24F46 /* LJWChineseNameTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 728AD06D1B11D71A00D24F46 /* LJWChineseNameTextField.m */; };
+		728AD0821B11D71A00D24F46 /* LJWMessageCodeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 728AD06F1B11D71A00D24F46 /* LJWMessageCodeTextField.m */; };
+		728AD0831B11D71A00D24F46 /* LJWPassworldTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 728AD0711B11D71A00D24F46 /* LJWPassworldTextField.m */; };
+		728AD0841B11D71A00D24F46 /* LJWPhoneNumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 728AD0731B11D71A00D24F46 /* LJWPhoneNumberTextField.m */; };
+		728AD0851B11D71A00D24F46 /* LJWTextChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 728AD0751B11D71A00D24F46 /* LJWTextChecker.m */; };
+		728AD0861B11D71A00D24F46 /* LJWTextCheckerResultInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 728AD07A1B11D71A00D24F46 /* LJWTextCheckerResultInfo.m */; };
+		728AD0871B11D71A00D24F46 /* LJWTextCompareConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 728AD07C1B11D71A00D24F46 /* LJWTextCompareConfig.m */; };
+		728AD0881B11D71A00D24F46 /* LJWTextCompareResultInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 728AD07E1B11D71A00D24F46 /* LJWTextCompareResultInfo.m */; };
+		72EBE0B11B17212B003BD08C /* LJWHUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EBE0A81B17212B003BD08C /* LJWHUDManager.m */; };
+		72EBE0B21B17212B003BD08C /* LJWMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EBE0AB1B17212B003BD08C /* LJWMessageView.m */; };
+		72EBE0B31B17212B003BD08C /* LJWWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EBE0AD1B17212B003BD08C /* LJWWaitingView.m */; };
+		72EBE0B41B17212B003BD08C /* UIView+LJWHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EBE0B01B17212B003BD08C /* UIView+LJWHUD.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		728AD02C1B109EE800D24F46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 728AD00A1B109EE800D24F46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 728AD0111B109EE800D24F46;
+			remoteInfo = LJWTextChecker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		723AAE891B15D4C0005460FB /* LJWKeyboardHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWKeyboardHandler.h; sourceTree = "<group>"; };
+		723AAE8A1B15D4C0005460FB /* LJWKeyboardHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWKeyboardHandler.m; sourceTree = "<group>"; };
+		723AAE8B1B15D4C0005460FB /* UIView+FirstResponderNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FirstResponderNotification.h"; sourceTree = "<group>"; };
+		723AAE8C1B15D4C0005460FB /* UIView+FirstResponderNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FirstResponderNotification.m"; sourceTree = "<group>"; };
+		723AAE8D1B15D4C0005460FB /* UIViewController+LJWKeyboardHandlerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LJWKeyboardHandlerHelper.h"; sourceTree = "<group>"; };
+		723AAE8E1B15D4C0005460FB /* UIViewController+LJWKeyboardHandlerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LJWKeyboardHandlerHelper.m"; sourceTree = "<group>"; };
+		723AAE8F1B15D4C0005460FB /* UIWindow+LJWPresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+LJWPresentViewController.h"; sourceTree = "<group>"; };
+		723AAE901B15D4C0005460FB /* UIWindow+LJWPresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+LJWPresentViewController.m"; sourceTree = "<group>"; };
+		728AD0121B109EE800D24F46 /* LJWTextChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJWTextChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		728AD0161B109EE800D24F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		728AD0171B109EE800D24F46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		728AD0191B109EE800D24F46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		728AD01A1B109EE800D24F46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		728AD01C1B109EE800D24F46 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		728AD01D1B109EE800D24F46 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		728AD0201B109EE800D24F46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		728AD0221B109EE800D24F46 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		728AD0251B109EE800D24F46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		728AD02B1B109EE800D24F46 /* LJWTextCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LJWTextCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		728AD0301B109EE800D24F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		728AD0311B109EE800D24F46 /* LJWTextCheckerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJWTextCheckerTests.m; sourceTree = "<group>"; };
+		728AD0681B11D71A00D24F46 /* LJWBaseCheckedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWBaseCheckedTextField.h; sourceTree = "<group>"; };
+		728AD0691B11D71A00D24F46 /* LJWBaseCheckedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWBaseCheckedTextField.m; sourceTree = "<group>"; };
+		728AD06A1B11D71A00D24F46 /* LJWCarNumberTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWCarNumberTextField.h; sourceTree = "<group>"; };
+		728AD06B1B11D71A00D24F46 /* LJWCarNumberTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWCarNumberTextField.m; sourceTree = "<group>"; };
+		728AD06C1B11D71A00D24F46 /* LJWChineseNameTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWChineseNameTextField.h; sourceTree = "<group>"; };
+		728AD06D1B11D71A00D24F46 /* LJWChineseNameTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWChineseNameTextField.m; sourceTree = "<group>"; };
+		728AD06E1B11D71A00D24F46 /* LJWMessageCodeTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWMessageCodeTextField.h; sourceTree = "<group>"; };
+		728AD06F1B11D71A00D24F46 /* LJWMessageCodeTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWMessageCodeTextField.m; sourceTree = "<group>"; };
+		728AD0701B11D71A00D24F46 /* LJWPassworldTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWPassworldTextField.h; sourceTree = "<group>"; };
+		728AD0711B11D71A00D24F46 /* LJWPassworldTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWPassworldTextField.m; sourceTree = "<group>"; };
+		728AD0721B11D71A00D24F46 /* LJWPhoneNumberTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWPhoneNumberTextField.h; sourceTree = "<group>"; };
+		728AD0731B11D71A00D24F46 /* LJWPhoneNumberTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWPhoneNumberTextField.m; sourceTree = "<group>"; };
+		728AD0741B11D71A00D24F46 /* LJWTextChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWTextChecker.h; sourceTree = "<group>"; };
+		728AD0751B11D71A00D24F46 /* LJWTextChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWTextChecker.m; sourceTree = "<group>"; };
+		728AD0761B11D71A00D24F46 /* LJWTextCheckerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWTextCheckerConfig.h; sourceTree = "<group>"; };
+		728AD0791B11D71A00D24F46 /* LJWTextCheckerResultInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWTextCheckerResultInfo.h; sourceTree = "<group>"; };
+		728AD07A1B11D71A00D24F46 /* LJWTextCheckerResultInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWTextCheckerResultInfo.m; sourceTree = "<group>"; };
+		728AD07B1B11D71A00D24F46 /* LJWTextCompareConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWTextCompareConfig.h; sourceTree = "<group>"; };
+		728AD07C1B11D71A00D24F46 /* LJWTextCompareConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWTextCompareConfig.m; sourceTree = "<group>"; };
+		728AD07D1B11D71A00D24F46 /* LJWTextCompareResultInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWTextCompareResultInfo.h; sourceTree = "<group>"; };
+		728AD07E1B11D71A00D24F46 /* LJWTextCompareResultInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWTextCompareResultInfo.m; sourceTree = "<group>"; };
+		72EBE0A71B17212B003BD08C /* LJWHUDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWHUDManager.h; sourceTree = "<group>"; };
+		72EBE0A81B17212B003BD08C /* LJWHUDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWHUDManager.m; sourceTree = "<group>"; };
+		72EBE0AA1B17212B003BD08C /* LJWMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWMessageView.h; sourceTree = "<group>"; };
+		72EBE0AB1B17212B003BD08C /* LJWMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWMessageView.m; sourceTree = "<group>"; };
+		72EBE0AC1B17212B003BD08C /* LJWWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWWaitingView.h; sourceTree = "<group>"; };
+		72EBE0AD1B17212B003BD08C /* LJWWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWWaitingView.m; sourceTree = "<group>"; };
+		72EBE0AE1B17212B003BD08C /* LJWMessageViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWMessageViewProtocol.h; sourceTree = "<group>"; };
+		72EBE0AF1B17212B003BD08C /* UIView+LJWHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LJWHUD.h"; sourceTree = "<group>"; };
+		72EBE0B01B17212B003BD08C /* UIView+LJWHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LJWHUD.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		728AD00F1B109EE800D24F46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		728AD0281B109EE800D24F46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		723AAE881B15D4C0005460FB /* LJWKeyboardHanlder */ = {
+			isa = PBXGroup;
+			children = (
+				723AAE891B15D4C0005460FB /* LJWKeyboardHandler.h */,
+				723AAE8A1B15D4C0005460FB /* LJWKeyboardHandler.m */,
+				723AAE8B1B15D4C0005460FB /* UIView+FirstResponderNotification.h */,
+				723AAE8C1B15D4C0005460FB /* UIView+FirstResponderNotification.m */,
+				723AAE8D1B15D4C0005460FB /* UIViewController+LJWKeyboardHandlerHelper.h */,
+				723AAE8E1B15D4C0005460FB /* UIViewController+LJWKeyboardHandlerHelper.m */,
+				723AAE8F1B15D4C0005460FB /* UIWindow+LJWPresentViewController.h */,
+				723AAE901B15D4C0005460FB /* UIWindow+LJWPresentViewController.m */,
+			);
+			path = LJWKeyboardHanlder;
+			sourceTree = "<group>";
+		};
+		728AD0091B109EE800D24F46 = {
+			isa = PBXGroup;
+			children = (
+				728AD02E1B109EE800D24F46 /* LJWTextCheckerTests */,
+				728AD0141B109EE800D24F46 /* LJWTextChecker */,
+				728AD0131B109EE800D24F46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		728AD0131B109EE800D24F46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				728AD0121B109EE800D24F46 /* LJWTextChecker.app */,
+				728AD02B1B109EE800D24F46 /* LJWTextCheckerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		728AD0141B109EE800D24F46 /* LJWTextChecker */ = {
+			isa = PBXGroup;
+			children = (
+				72EBE0A61B17212B003BD08C /* LJWHUD */,
+				723AAE881B15D4C0005460FB /* LJWKeyboardHanlder */,
+				728AD0661B11D71900D24F46 /* LJWTextChecker */,
+				728AD0191B109EE800D24F46 /* AppDelegate.h */,
+				728AD01A1B109EE800D24F46 /* AppDelegate.m */,
+				728AD01C1B109EE800D24F46 /* ViewController.h */,
+				728AD01D1B109EE800D24F46 /* ViewController.m */,
+				728AD01F1B109EE800D24F46 /* Main.storyboard */,
+				728AD0221B109EE800D24F46 /* Images.xcassets */,
+				728AD0241B109EE800D24F46 /* LaunchScreen.xib */,
+				728AD0151B109EE800D24F46 /* Supporting Files */,
+			);
+			path = LJWTextChecker;
+			sourceTree = "<group>";
+		};
+		728AD0151B109EE800D24F46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				728AD0161B109EE800D24F46 /* Info.plist */,
+				728AD0171B109EE800D24F46 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		728AD02E1B109EE800D24F46 /* LJWTextCheckerTests */ = {
+			isa = PBXGroup;
+			children = (
+				728AD0311B109EE800D24F46 /* LJWTextCheckerTests.m */,
+				728AD02F1B109EE800D24F46 /* Supporting Files */,
+			);
+			path = LJWTextCheckerTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		728AD02F1B109EE800D24F46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				728AD0301B109EE800D24F46 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		728AD0661B11D71900D24F46 /* LJWTextChecker */ = {
+			isa = PBXGroup;
+			children = (
+				728AD0781B11D71A00D24F46 /* Objects */,
+				728AD0671B11D71900D24F46 /* LJWCheckedTextFields */,
+				728AD0741B11D71A00D24F46 /* LJWTextChecker.h */,
+				728AD0751B11D71A00D24F46 /* LJWTextChecker.m */,
+				728AD0761B11D71A00D24F46 /* LJWTextCheckerConfig.h */,
+			);
+			path = LJWTextChecker;
+			sourceTree = "<group>";
+		};
+		728AD0671B11D71900D24F46 /* LJWCheckedTextFields */ = {
+			isa = PBXGroup;
+			children = (
+				728AD0681B11D71A00D24F46 /* LJWBaseCheckedTextField.h */,
+				728AD0691B11D71A00D24F46 /* LJWBaseCheckedTextField.m */,
+				728AD06A1B11D71A00D24F46 /* LJWCarNumberTextField.h */,
+				728AD06B1B11D71A00D24F46 /* LJWCarNumberTextField.m */,
+				728AD06C1B11D71A00D24F46 /* LJWChineseNameTextField.h */,
+				728AD06D1B11D71A00D24F46 /* LJWChineseNameTextField.m */,
+				728AD06E1B11D71A00D24F46 /* LJWMessageCodeTextField.h */,
+				728AD06F1B11D71A00D24F46 /* LJWMessageCodeTextField.m */,
+				728AD0701B11D71A00D24F46 /* LJWPassworldTextField.h */,
+				728AD0711B11D71A00D24F46 /* LJWPassworldTextField.m */,
+				728AD0721B11D71A00D24F46 /* LJWPhoneNumberTextField.h */,
+				728AD0731B11D71A00D24F46 /* LJWPhoneNumberTextField.m */,
+			);
+			path = LJWCheckedTextFields;
+			sourceTree = "<group>";
+		};
+		728AD0781B11D71A00D24F46 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				728AD0791B11D71A00D24F46 /* LJWTextCheckerResultInfo.h */,
+				728AD07A1B11D71A00D24F46 /* LJWTextCheckerResultInfo.m */,
+				728AD07B1B11D71A00D24F46 /* LJWTextCompareConfig.h */,
+				728AD07C1B11D71A00D24F46 /* LJWTextCompareConfig.m */,
+				728AD07D1B11D71A00D24F46 /* LJWTextCompareResultInfo.h */,
+				728AD07E1B11D71A00D24F46 /* LJWTextCompareResultInfo.m */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		72EBE0A61B17212B003BD08C /* LJWHUD */ = {
+			isa = PBXGroup;
+			children = (
+				72EBE0A71B17212B003BD08C /* LJWHUDManager.h */,
+				72EBE0A81B17212B003BD08C /* LJWHUDManager.m */,
+				72EBE0A91B17212B003BD08C /* LJWHUDViews */,
+				72EBE0AE1B17212B003BD08C /* LJWMessageViewProtocol.h */,
+				72EBE0AF1B17212B003BD08C /* UIView+LJWHUD.h */,
+				72EBE0B01B17212B003BD08C /* UIView+LJWHUD.m */,
+			);
+			path = LJWHUD;
+			sourceTree = "<group>";
+		};
+		72EBE0A91B17212B003BD08C /* LJWHUDViews */ = {
+			isa = PBXGroup;
+			children = (
+				72EBE0AA1B17212B003BD08C /* LJWMessageView.h */,
+				72EBE0AB1B17212B003BD08C /* LJWMessageView.m */,
+				72EBE0AC1B17212B003BD08C /* LJWWaitingView.h */,
+				72EBE0AD1B17212B003BD08C /* LJWWaitingView.m */,
+			);
+			path = LJWHUDViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		728AD0111B109EE800D24F46 /* LJWTextChecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 728AD0351B109EE800D24F46 /* Build configuration list for PBXNativeTarget "LJWTextChecker" */;
+			buildPhases = (
+				728AD00E1B109EE800D24F46 /* Sources */,
+				728AD00F1B109EE800D24F46 /* Frameworks */,
+				728AD0101B109EE800D24F46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LJWTextChecker;
+			productName = LJWTextChecker;
+			productReference = 728AD0121B109EE800D24F46 /* LJWTextChecker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		728AD02A1B109EE800D24F46 /* LJWTextCheckerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 728AD0381B109EE800D24F46 /* Build configuration list for PBXNativeTarget "LJWTextCheckerTests" */;
+			buildPhases = (
+				728AD0271B109EE800D24F46 /* Sources */,
+				728AD0281B109EE800D24F46 /* Frameworks */,
+				728AD0291B109EE800D24F46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				728AD02D1B109EE800D24F46 /* PBXTargetDependency */,
+			);
+			name = LJWTextCheckerTests;
+			productName = LJWTextCheckerTests;
+			productReference = 728AD02B1B109EE800D24F46 /* LJWTextCheckerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		728AD00A1B109EE800D24F46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = ljw;
+				TargetAttributes = {
+					728AD0111B109EE800D24F46 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					728AD02A1B109EE800D24F46 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 728AD0111B109EE800D24F46;
+					};
+				};
+			};
+			buildConfigurationList = 728AD00D1B109EE800D24F46 /* Build configuration list for PBXProject "LJWTextChecker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 728AD0091B109EE800D24F46;
+			productRefGroup = 728AD0131B109EE800D24F46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				728AD0111B109EE800D24F46 /* LJWTextChecker */,
+				728AD02A1B109EE800D24F46 /* LJWTextCheckerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		728AD0101B109EE800D24F46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				728AD0211B109EE800D24F46 /* Main.storyboard in Resources */,
+				728AD0261B109EE800D24F46 /* LaunchScreen.xib in Resources */,
+				728AD0231B109EE800D24F46 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		728AD0291B109EE800D24F46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		728AD00E1B109EE800D24F46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				723AAE941B15D4C0005460FB /* UIWindow+LJWPresentViewController.m in Sources */,
+				728AD0871B11D71A00D24F46 /* LJWTextCompareConfig.m in Sources */,
+				72EBE0B41B17212B003BD08C /* UIView+LJWHUD.m in Sources */,
+				728AD01E1B109EE800D24F46 /* ViewController.m in Sources */,
+				72EBE0B21B17212B003BD08C /* LJWMessageView.m in Sources */,
+				723AAE921B15D4C0005460FB /* UIView+FirstResponderNotification.m in Sources */,
+				728AD0841B11D71A00D24F46 /* LJWPhoneNumberTextField.m in Sources */,
+				723AAE911B15D4C0005460FB /* LJWKeyboardHandler.m in Sources */,
+				728AD0811B11D71A00D24F46 /* LJWChineseNameTextField.m in Sources */,
+				728AD07F1B11D71A00D24F46 /* LJWBaseCheckedTextField.m in Sources */,
+				728AD0851B11D71A00D24F46 /* LJWTextChecker.m in Sources */,
+				72EBE0B31B17212B003BD08C /* LJWWaitingView.m in Sources */,
+				728AD0831B11D71A00D24F46 /* LJWPassworldTextField.m in Sources */,
+				728AD0861B11D71A00D24F46 /* LJWTextCheckerResultInfo.m in Sources */,
+				723AAE931B15D4C0005460FB /* UIViewController+LJWKeyboardHandlerHelper.m in Sources */,
+				728AD0881B11D71A00D24F46 /* LJWTextCompareResultInfo.m in Sources */,
+				728AD01B1B109EE800D24F46 /* AppDelegate.m in Sources */,
+				728AD0821B11D71A00D24F46 /* LJWMessageCodeTextField.m in Sources */,
+				72EBE0B11B17212B003BD08C /* LJWHUDManager.m in Sources */,
+				728AD0181B109EE800D24F46 /* main.m in Sources */,
+				728AD0801B11D71A00D24F46 /* LJWCarNumberTextField.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		728AD0271B109EE800D24F46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				728AD0321B109EE800D24F46 /* LJWTextCheckerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		728AD02D1B109EE800D24F46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 728AD0111B109EE800D24F46 /* LJWTextChecker */;
+			targetProxy = 728AD02C1B109EE800D24F46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		728AD01F1B109EE800D24F46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				728AD0201B109EE800D24F46 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		728AD0241B109EE800D24F46 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				728AD0251B109EE800D24F46 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		728AD0331B109EE800D24F46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		728AD0341B109EE800D24F46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		728AD0361B109EE800D24F46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LJWTextChecker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		728AD0371B109EE800D24F46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LJWTextChecker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		728AD0391B109EE800D24F46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LJWTextCheckerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LJWTextChecker.app/LJWTextChecker";
+			};
+			name = Debug;
+		};
+		728AD03A1B109EE800D24F46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LJWTextCheckerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LJWTextChecker.app/LJWTextChecker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		728AD00D1B109EE800D24F46 /* Build configuration list for PBXProject "LJWTextChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				728AD0331B109EE800D24F46 /* Debug */,
+				728AD0341B109EE800D24F46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		728AD0351B109EE800D24F46 /* Build configuration list for PBXNativeTarget "LJWTextChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				728AD0361B109EE800D24F46 /* Debug */,
+				728AD0371B109EE800D24F46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		728AD0381B109EE800D24F46 /* Build configuration list for PBXNativeTarget "LJWTextCheckerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				728AD0391B109EE800D24F46 /* Debug */,
+				728AD03A1B109EE800D24F46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 728AD00A1B109EE800D24F46 /* Project object */;
+}
