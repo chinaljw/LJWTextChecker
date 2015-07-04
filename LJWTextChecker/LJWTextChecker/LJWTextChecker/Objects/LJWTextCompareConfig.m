@@ -10,12 +10,12 @@
 
 @implementation LJWTextCompareConfig
 
-- (LJWTextResultType)compare
+- (LJWTextCheckingResultType)compare
 {
     if ([[self.object_1 checkedText] isEqualToString:[self.object_2 checkedText]]) {
-        return LJWTextResultTypeCorrect;
+        return LJWTextCheckingResultTypeCorrect;
     }
-    return LJWTextResutlTypeUnlike;
+    return LJWTextCheckingResultTypeUnlike;
 }
 
 @end

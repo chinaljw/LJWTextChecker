@@ -11,9 +11,11 @@
 
 @interface LJWTextCheckerResultInfo : NSObject
 
-@property (nonatomic, assign) LJWTextResultType resultType;
+@property (nonatomic, assign) LJWTextCheckingResultType resultType;
 
 @property (nonatomic, strong) id<LJWTextCheckProtocol> someone;
+
+@property (nonatomic, strong) NSString *resultString;
 
 - (void)showResult;
 

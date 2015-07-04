@@ -9,8 +9,6 @@
 #import "UIWindow+LJWPresentViewController.h"
 #import <objc/runtime.h>
 
-//static char *LJWPresentViewControllerKey = "LJWPresentViewControllerKey";
-
 @implementation UIWindow (LJWPresentViewController)
 
 - (UIViewController *)presentViewController
@@ -29,8 +27,8 @@
         return [self getPresentViewController:[(UITabBarController *)currentViewController selectedViewController]];
     }
     
-    if ([currentViewController presentingViewController]) {
-        return [self getPresentViewController:[currentViewController presentingViewController]];
+    if ([currentViewController presentedViewController]) {
+        return [self getPresentViewController:[currentViewController presentedViewController]];
     }
     
     return currentViewController;

@@ -15,8 +15,16 @@
 
 @property (nonatomic, assign) id<LJWTextCheckProtocol> object_2;
 
+/**
+ *  两个元素不一样时的描述
+ */
 @property (nonatomic, strong) NSString *unlikeDescription;
 
-- (LJWTextResultType)compare;
+/**
+ *  比较两个元素是否一样
+ *
+ *  @return 结果
+ */
+- (LJWTextCheckingResultType)compare;
 
 @end

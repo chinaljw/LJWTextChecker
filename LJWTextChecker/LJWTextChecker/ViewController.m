@@ -8,8 +8,9 @@
 
 #import "ViewController.h"
 #import "LJWTextChecker.h"
-#import "UIViewController+LJWKeyboardHandlerHelper.h"
+#import "LJWKeyboardHandlerHeaders.h"
 #import "LJWHUDManager.h"
+#import "UIView+LJWHUD.h"
 
 @interface ViewController ()
 
@@ -21,7 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.ljwKeyboardHandler = [[LJWKeyboardHandler alloc] init];
+    [self registerLJWKeyboardHandler];
     
     [self.carNumberTextField addTarget:self action:@selector(test:) forControlEvents:UIControlEventEditingChanged];
     
@@ -40,70 +41,20 @@
 - (IBAction)didClickCheckingButton:(UIButton *)sender {
     
     [self.view endEditing:YES];
-    
-//    [LJWTextChecker checkAllWidgets:@[self.carNumberTextField, self.chineseTextField, self.messageCodeTextField, self.passwordTextField, self.phoneNumberTextField] completionBlock:^(LJWTextCheckerResultInfo *resultInfo) {
-//        
-//        switch (resultInfo.resultType) {
-//            case LJWTextErrorTypeEmpty:
-//            {
-//                NSLog(@"%@", [resultInfo.someone emptyDescription]);
-//            }
-//                break;
-//            case LJWTextErrorTypeFormetError:
-//            {
-//                NSLog(@"%@", [resultInfo.someone errorDescription]);
-//
-//            }
-//                break;
-//            case LJWTextResultTypeCorrect:
-//            {
-//                NSLog(@"all correct");
-//            }
-//                break;
-//                
-//            default:
-//                break;
-//        }
-//        
-//    }];
-    
+
+    //check format
     if ([[LJWTextChecker checkAllWidgets:@[self.carNumberTextField, self.chineseTextField, self.messageCodeTextField, self.passwordTextField, self.phoneNumberTextField] completionBlock:^(LJWTextCheckerResultInfo *resultInfo){
         
-        NSString *resultString = nil;
+        [[LJWHUDManager defaultManager] showMessageViewWithMessage:resultInfo.resultString inView:self.view completionBlock:nil];
         
-        switch (resultInfo.resultType) {
-                
-            case LJWTextResultTypeEmpty:
-            {
-                resultString = [resultInfo.someone emptyDescription];
-            }
-                break;
-            case LJWTextResultTypeFormatError:
-            {
-                resultString = [resultInfo.someone errorDescription];
-                
-            }
-                break;
-            case LJWTextResultTypeCorrect:
-            {
-                resultString = [NSString stringWithFormat:@"%@ is ok!", resultInfo.someone];
-            }
-                break;
-            case LJWTextResultTypeEeverythingIsOK:
-            {
-                resultString = @"everything is ok!";
-            }
-                
-            default:
-                break;
-        }
         
-        [[LJWHUDManager defaultManager] showMessageViewWithMessage:resultString inView:self.view completionBlock:nil];
         
     }] resultType] > 0) {
         return;
     };
     
+    
+    //compare
     LJWTextCompareConfig *config_1 = [[LJWTextCompareConfig alloc] init];
     config_1.object_1 = self.messageCodeTextField;
     config_1.object_2 = self.passwordTextField;
@@ -115,11 +66,9 @@
     config_2.unlikeDescription = @"密码和手机号不相等!";
     
     
-    [LJWTextChecker comepareObjectWidgetsByConfigs:@[config_1, config_2] completionBlock:^(LJWTextCheckerResultInfo *resultInfo) {
-       
-        NSString *description = [(LJWTextCompareResultInfo *)resultInfo config].unlikeDescription;
+    [LJWTextChecker comepareObjectWidgetsByConfigs:@[config_1] completionBlock:^(LJWTextCheckerResultInfo *resultInfo) {
         
-        [[LJWHUDManager defaultManager] showMessageViewWithMessage:description inView:self.view completionBlock:nil];
+        [[LJWHUDManager defaultManager] showMessageViewWithMessage:resultInfo.resultString inView:self.view completionBlock:nil];
         
     }];
     

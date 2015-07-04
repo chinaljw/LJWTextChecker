@@ -26,7 +26,7 @@ static CGFloat const sideLength = 80;
     if (self) {
         
         UIView *indicatorBackground = [[UIView alloc] initWithFrame:CGRectMake(0, 0, sideLength, sideLength)];
-        indicatorBackground.backgroundColor = [UIColor blackColor];
+        indicatorBackground.backgroundColor = [UIColor grayColor];
         indicatorBackground.alpha = 1;
         indicatorBackground.layer.cornerRadius = 5.f;
         indicatorBackground.layer.masksToBounds = YES;
@@ -52,9 +52,9 @@ static CGFloat const sideLength = 80;
     return self;
 }
 
-- (void)dealloc
-{
+//- (void)dealloc
+//{
 //    NSLog(@"%@ dealloc", self);
-}
+//}
 
 @end

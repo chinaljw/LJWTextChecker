@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		723AAE911B15D4C0005460FB /* LJWKeyboardHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 723AAE8A1B15D4C0005460FB /* LJWKeyboardHandler.m */; };
-		723AAE921B15D4C0005460FB /* UIView+FirstResponderNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 723AAE8C1B15D4C0005460FB /* UIView+FirstResponderNotification.m */; };
-		723AAE931B15D4C0005460FB /* UIViewController+LJWKeyboardHandlerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 723AAE8E1B15D4C0005460FB /* UIViewController+LJWKeyboardHandlerHelper.m */; };
-		723AAE941B15D4C0005460FB /* UIWindow+LJWPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 723AAE901B15D4C0005460FB /* UIWindow+LJWPresentViewController.m */; };
+		727196AD1B480B1F00EA932C /* LJWHUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 727196971B480B1F00EA932C /* LJWHUDManager.m */; };
+		727196AE1B480B1F00EA932C /* LJWMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7271969A1B480B1F00EA932C /* LJWMessageView.m */; };
+		727196AF1B480B1F00EA932C /* LJWWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7271969C1B480B1F00EA932C /* LJWWaitingView.m */; };
+		727196B01B480B1F00EA932C /* UIView+LJWHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7271969F1B480B1F00EA932C /* UIView+LJWHUD.m */; };
+		727196B11B480B1F00EA932C /* LJWKeyboardHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 727196A21B480B1F00EA932C /* LJWKeyboardHandler.m */; };
+		727196B21B480B1F00EA932C /* LJWKeyboardToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 727196A51B480B1F00EA932C /* LJWKeyboardToolBar.m */; };
+		727196B31B480B1F00EA932C /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 727196A61B480B1F00EA932C /* Resources.bundle */; };
+		727196B41B480B1F00EA932C /* UIView+LJWKeyboardHandlerAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 727196A81B480B1F00EA932C /* UIView+LJWKeyboardHandlerAddtion.m */; };
+		727196B51B480B1F00EA932C /* UIViewController+LJWKeyboardHandlerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 727196AA1B480B1F00EA932C /* UIViewController+LJWKeyboardHandlerHelper.m */; };
+		727196B61B480B1F00EA932C /* UIWindow+LJWPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 727196AC1B480B1F00EA932C /* UIWindow+LJWPresentViewController.m */; };
 		728AD0181B109EE800D24F46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 728AD0171B109EE800D24F46 /* main.m */; };
 		728AD01B1B109EE800D24F46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 728AD01A1B109EE800D24F46 /* AppDelegate.m */; };
 		728AD01E1B109EE800D24F46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728AD01D1B109EE800D24F46 /* ViewController.m */; };
@@ -28,10 +34,6 @@
 		728AD0861B11D71A00D24F46 /* LJWTextCheckerResultInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 728AD07A1B11D71A00D24F46 /* LJWTextCheckerResultInfo.m */; };
 		728AD0871B11D71A00D24F46 /* LJWTextCompareConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 728AD07C1B11D71A00D24F46 /* LJWTextCompareConfig.m */; };
 		728AD0881B11D71A00D24F46 /* LJWTextCompareResultInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 728AD07E1B11D71A00D24F46 /* LJWTextCompareResultInfo.m */; };
-		72EBE0B11B17212B003BD08C /* LJWHUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EBE0A81B17212B003BD08C /* LJWHUDManager.m */; };
-		72EBE0B21B17212B003BD08C /* LJWMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EBE0AB1B17212B003BD08C /* LJWMessageView.m */; };
-		72EBE0B31B17212B003BD08C /* LJWWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EBE0AD1B17212B003BD08C /* LJWWaitingView.m */; };
-		72EBE0B41B17212B003BD08C /* UIView+LJWHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EBE0B01B17212B003BD08C /* UIView+LJWHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +47,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		723AAE891B15D4C0005460FB /* LJWKeyboardHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWKeyboardHandler.h; sourceTree = "<group>"; };
-		723AAE8A1B15D4C0005460FB /* LJWKeyboardHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWKeyboardHandler.m; sourceTree = "<group>"; };
-		723AAE8B1B15D4C0005460FB /* UIView+FirstResponderNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FirstResponderNotification.h"; sourceTree = "<group>"; };
-		723AAE8C1B15D4C0005460FB /* UIView+FirstResponderNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FirstResponderNotification.m"; sourceTree = "<group>"; };
-		723AAE8D1B15D4C0005460FB /* UIViewController+LJWKeyboardHandlerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LJWKeyboardHandlerHelper.h"; sourceTree = "<group>"; };
-		723AAE8E1B15D4C0005460FB /* UIViewController+LJWKeyboardHandlerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LJWKeyboardHandlerHelper.m"; sourceTree = "<group>"; };
-		723AAE8F1B15D4C0005460FB /* UIWindow+LJWPresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+LJWPresentViewController.h"; sourceTree = "<group>"; };
-		723AAE901B15D4C0005460FB /* UIWindow+LJWPresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+LJWPresentViewController.m"; sourceTree = "<group>"; };
+		727196961B480B1F00EA932C /* LJWHUDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWHUDManager.h; sourceTree = "<group>"; };
+		727196971B480B1F00EA932C /* LJWHUDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWHUDManager.m; sourceTree = "<group>"; };
+		727196991B480B1F00EA932C /* LJWMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWMessageView.h; sourceTree = "<group>"; };
+		7271969A1B480B1F00EA932C /* LJWMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWMessageView.m; sourceTree = "<group>"; };
+		7271969B1B480B1F00EA932C /* LJWWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWWaitingView.h; sourceTree = "<group>"; };
+		7271969C1B480B1F00EA932C /* LJWWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWWaitingView.m; sourceTree = "<group>"; };
+		7271969D1B480B1F00EA932C /* LJWMessageViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWMessageViewProtocol.h; sourceTree = "<group>"; };
+		7271969E1B480B1F00EA932C /* UIView+LJWHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LJWHUD.h"; sourceTree = "<group>"; };
+		7271969F1B480B1F00EA932C /* UIView+LJWHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LJWHUD.m"; sourceTree = "<group>"; };
+		727196A11B480B1F00EA932C /* LJWKeyboardHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWKeyboardHandler.h; sourceTree = "<group>"; };
+		727196A21B480B1F00EA932C /* LJWKeyboardHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWKeyboardHandler.m; sourceTree = "<group>"; };
+		727196A31B480B1F00EA932C /* LJWKeyboardHandlerHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWKeyboardHandlerHeaders.h; sourceTree = "<group>"; };
+		727196A41B480B1F00EA932C /* LJWKeyboardToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWKeyboardToolBar.h; sourceTree = "<group>"; };
+		727196A51B480B1F00EA932C /* LJWKeyboardToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWKeyboardToolBar.m; sourceTree = "<group>"; };
+		727196A61B480B1F00EA932C /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
+		727196A71B480B1F00EA932C /* UIView+LJWKeyboardHandlerAddtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LJWKeyboardHandlerAddtion.h"; sourceTree = "<group>"; };
+		727196A81B480B1F00EA932C /* UIView+LJWKeyboardHandlerAddtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LJWKeyboardHandlerAddtion.m"; sourceTree = "<group>"; };
+		727196A91B480B1F00EA932C /* UIViewController+LJWKeyboardHandlerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LJWKeyboardHandlerHelper.h"; sourceTree = "<group>"; };
+		727196AA1B480B1F00EA932C /* UIViewController+LJWKeyboardHandlerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LJWKeyboardHandlerHelper.m"; sourceTree = "<group>"; };
+		727196AB1B480B1F00EA932C /* UIWindow+LJWPresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+LJWPresentViewController.h"; sourceTree = "<group>"; };
+		727196AC1B480B1F00EA932C /* UIWindow+LJWPresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+LJWPresentViewController.m"; sourceTree = "<group>"; };
 		728AD0121B109EE800D24F46 /* LJWTextChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJWTextChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		728AD0161B109EE800D24F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		728AD0171B109EE800D24F46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,15 +102,6 @@
 		728AD07C1B11D71A00D24F46 /* LJWTextCompareConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWTextCompareConfig.m; sourceTree = "<group>"; };
 		728AD07D1B11D71A00D24F46 /* LJWTextCompareResultInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWTextCompareResultInfo.h; sourceTree = "<group>"; };
 		728AD07E1B11D71A00D24F46 /* LJWTextCompareResultInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWTextCompareResultInfo.m; sourceTree = "<group>"; };
-		72EBE0A71B17212B003BD08C /* LJWHUDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWHUDManager.h; sourceTree = "<group>"; };
-		72EBE0A81B17212B003BD08C /* LJWHUDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWHUDManager.m; sourceTree = "<group>"; };
-		72EBE0AA1B17212B003BD08C /* LJWMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWMessageView.h; sourceTree = "<group>"; };
-		72EBE0AB1B17212B003BD08C /* LJWMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWMessageView.m; sourceTree = "<group>"; };
-		72EBE0AC1B17212B003BD08C /* LJWWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWWaitingView.h; sourceTree = "<group>"; };
-		72EBE0AD1B17212B003BD08C /* LJWWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWWaitingView.m; sourceTree = "<group>"; };
-		72EBE0AE1B17212B003BD08C /* LJWMessageViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWMessageViewProtocol.h; sourceTree = "<group>"; };
-		72EBE0AF1B17212B003BD08C /* UIView+LJWHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LJWHUD.h"; sourceTree = "<group>"; };
-		72EBE0B01B17212B003BD08C /* UIView+LJWHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LJWHUD.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,19 +122,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		723AAE881B15D4C0005460FB /* LJWKeyboardHanlder */ = {
+		727196941B480B1F00EA932C /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
-				723AAE891B15D4C0005460FB /* LJWKeyboardHandler.h */,
-				723AAE8A1B15D4C0005460FB /* LJWKeyboardHandler.m */,
-				723AAE8B1B15D4C0005460FB /* UIView+FirstResponderNotification.h */,
-				723AAE8C1B15D4C0005460FB /* UIView+FirstResponderNotification.m */,
-				723AAE8D1B15D4C0005460FB /* UIViewController+LJWKeyboardHandlerHelper.h */,
-				723AAE8E1B15D4C0005460FB /* UIViewController+LJWKeyboardHandlerHelper.m */,
-				723AAE8F1B15D4C0005460FB /* UIWindow+LJWPresentViewController.h */,
-				723AAE901B15D4C0005460FB /* UIWindow+LJWPresentViewController.m */,
+				727196951B480B1F00EA932C /* LJWHUD */,
+				727196A01B480B1F00EA932C /* LJWKeyboardHandler */,
 			);
-			path = LJWKeyboardHanlder;
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		727196951B480B1F00EA932C /* LJWHUD */ = {
+			isa = PBXGroup;
+			children = (
+				727196961B480B1F00EA932C /* LJWHUDManager.h */,
+				727196971B480B1F00EA932C /* LJWHUDManager.m */,
+				727196981B480B1F00EA932C /* LJWHUDViews */,
+				7271969D1B480B1F00EA932C /* LJWMessageViewProtocol.h */,
+				7271969E1B480B1F00EA932C /* UIView+LJWHUD.h */,
+				7271969F1B480B1F00EA932C /* UIView+LJWHUD.m */,
+			);
+			path = LJWHUD;
+			sourceTree = "<group>";
+		};
+		727196981B480B1F00EA932C /* LJWHUDViews */ = {
+			isa = PBXGroup;
+			children = (
+				727196991B480B1F00EA932C /* LJWMessageView.h */,
+				7271969A1B480B1F00EA932C /* LJWMessageView.m */,
+				7271969B1B480B1F00EA932C /* LJWWaitingView.h */,
+				7271969C1B480B1F00EA932C /* LJWWaitingView.m */,
+			);
+			path = LJWHUDViews;
+			sourceTree = "<group>";
+		};
+		727196A01B480B1F00EA932C /* LJWKeyboardHandler */ = {
+			isa = PBXGroup;
+			children = (
+				727196A11B480B1F00EA932C /* LJWKeyboardHandler.h */,
+				727196A21B480B1F00EA932C /* LJWKeyboardHandler.m */,
+				727196A31B480B1F00EA932C /* LJWKeyboardHandlerHeaders.h */,
+				727196A41B480B1F00EA932C /* LJWKeyboardToolBar.h */,
+				727196A51B480B1F00EA932C /* LJWKeyboardToolBar.m */,
+				727196A61B480B1F00EA932C /* Resources.bundle */,
+				727196A71B480B1F00EA932C /* UIView+LJWKeyboardHandlerAddtion.h */,
+				727196A81B480B1F00EA932C /* UIView+LJWKeyboardHandlerAddtion.m */,
+				727196A91B480B1F00EA932C /* UIViewController+LJWKeyboardHandlerHelper.h */,
+				727196AA1B480B1F00EA932C /* UIViewController+LJWKeyboardHandlerHelper.m */,
+				727196AB1B480B1F00EA932C /* UIWindow+LJWPresentViewController.h */,
+				727196AC1B480B1F00EA932C /* UIWindow+LJWPresentViewController.m */,
+			);
+			path = LJWKeyboardHandler;
 			sourceTree = "<group>";
 		};
 		728AD0091B109EE800D24F46 = {
@@ -152,8 +195,7 @@
 		728AD0141B109EE800D24F46 /* LJWTextChecker */ = {
 			isa = PBXGroup;
 			children = (
-				72EBE0A61B17212B003BD08C /* LJWHUD */,
-				723AAE881B15D4C0005460FB /* LJWKeyboardHanlder */,
+				727196941B480B1F00EA932C /* Vendors */,
 				728AD0661B11D71900D24F46 /* LJWTextChecker */,
 				728AD0191B109EE800D24F46 /* AppDelegate.h */,
 				728AD01A1B109EE800D24F46 /* AppDelegate.m */,
@@ -235,30 +277,6 @@
 				728AD07E1B11D71A00D24F46 /* LJWTextCompareResultInfo.m */,
 			);
 			path = Objects;
-			sourceTree = "<group>";
-		};
-		72EBE0A61B17212B003BD08C /* LJWHUD */ = {
-			isa = PBXGroup;
-			children = (
-				72EBE0A71B17212B003BD08C /* LJWHUDManager.h */,
-				72EBE0A81B17212B003BD08C /* LJWHUDManager.m */,
-				72EBE0A91B17212B003BD08C /* LJWHUDViews */,
-				72EBE0AE1B17212B003BD08C /* LJWMessageViewProtocol.h */,
-				72EBE0AF1B17212B003BD08C /* UIView+LJWHUD.h */,
-				72EBE0B01B17212B003BD08C /* UIView+LJWHUD.m */,
-			);
-			path = LJWHUD;
-			sourceTree = "<group>";
-		};
-		72EBE0A91B17212B003BD08C /* LJWHUDViews */ = {
-			isa = PBXGroup;
-			children = (
-				72EBE0AA1B17212B003BD08C /* LJWMessageView.h */,
-				72EBE0AB1B17212B003BD08C /* LJWMessageView.m */,
-				72EBE0AC1B17212B003BD08C /* LJWWaitingView.h */,
-				72EBE0AD1B17212B003BD08C /* LJWWaitingView.m */,
-			);
-			path = LJWHUDViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +362,7 @@
 				728AD0211B109EE800D24F46 /* Main.storyboard in Resources */,
 				728AD0261B109EE800D24F46 /* LaunchScreen.xib in Resources */,
 				728AD0231B109EE800D24F46 /* Images.xcassets in Resources */,
+				727196B31B480B1F00EA932C /* Resources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,27 +380,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				723AAE941B15D4C0005460FB /* UIWindow+LJWPresentViewController.m in Sources */,
 				728AD0871B11D71A00D24F46 /* LJWTextCompareConfig.m in Sources */,
-				72EBE0B41B17212B003BD08C /* UIView+LJWHUD.m in Sources */,
 				728AD01E1B109EE800D24F46 /* ViewController.m in Sources */,
-				72EBE0B21B17212B003BD08C /* LJWMessageView.m in Sources */,
-				723AAE921B15D4C0005460FB /* UIView+FirstResponderNotification.m in Sources */,
 				728AD0841B11D71A00D24F46 /* LJWPhoneNumberTextField.m in Sources */,
-				723AAE911B15D4C0005460FB /* LJWKeyboardHandler.m in Sources */,
+				727196B11B480B1F00EA932C /* LJWKeyboardHandler.m in Sources */,
+				727196B61B480B1F00EA932C /* UIWindow+LJWPresentViewController.m in Sources */,
 				728AD0811B11D71A00D24F46 /* LJWChineseNameTextField.m in Sources */,
 				728AD07F1B11D71A00D24F46 /* LJWBaseCheckedTextField.m in Sources */,
 				728AD0851B11D71A00D24F46 /* LJWTextChecker.m in Sources */,
-				72EBE0B31B17212B003BD08C /* LJWWaitingView.m in Sources */,
+				727196AF1B480B1F00EA932C /* LJWWaitingView.m in Sources */,
+				727196B41B480B1F00EA932C /* UIView+LJWKeyboardHandlerAddtion.m in Sources */,
 				728AD0831B11D71A00D24F46 /* LJWPassworldTextField.m in Sources */,
 				728AD0861B11D71A00D24F46 /* LJWTextCheckerResultInfo.m in Sources */,
-				723AAE931B15D4C0005460FB /* UIViewController+LJWKeyboardHandlerHelper.m in Sources */,
 				728AD0881B11D71A00D24F46 /* LJWTextCompareResultInfo.m in Sources */,
 				728AD01B1B109EE800D24F46 /* AppDelegate.m in Sources */,
 				728AD0821B11D71A00D24F46 /* LJWMessageCodeTextField.m in Sources */,
-				72EBE0B11B17212B003BD08C /* LJWHUDManager.m in Sources */,
+				727196B01B480B1F00EA932C /* UIView+LJWHUD.m in Sources */,
 				728AD0181B109EE800D24F46 /* main.m in Sources */,
+				727196B51B480B1F00EA932C /* UIViewController+LJWKeyboardHandlerHelper.m in Sources */,
 				728AD0801B11D71A00D24F46 /* LJWCarNumberTextField.m in Sources */,
+				727196AD1B480B1F00EA932C /* LJWHUDManager.m in Sources */,
+				727196B21B480B1F00EA932C /* LJWKeyboardToolBar.m in Sources */,
+				727196AE1B480B1F00EA932C /* LJWMessageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +524,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LJWTextChecker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -514,6 +535,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LJWTextChecker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

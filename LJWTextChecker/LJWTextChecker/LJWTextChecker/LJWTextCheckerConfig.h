@@ -13,13 +13,13 @@
 @class LJWTextCheckerResultInfo;
 
 #pragma mark - 自定义类型
-typedef NS_ENUM(NSInteger, LJWTextResultType)
+typedef NS_ENUM(NSInteger, LJWTextCheckingResultType)
 {
-    LJWTextResultTypeCorrect = 0,
-    LJWTextResultTypeEmpty = 1,
-    LJWTextResultTypeFormatError = 2,
-    LJWTextResutlTypeUnlike = 3,
-    LJWTextResultTypeEeverythingIsOK = -1,
+    LJWTextCheckingResultTypeCorrect = 0,
+    LJWTextCheckingResultTypeEmpty = 1,
+    LJWTextCheckingResultTypeFormatError = 2,
+    LJWTextCheckingResultTypeUnlike = 3,
+    LJWTextCheckingResultTypeEeverythingIsOK = -1,
 };
 
 typedef void(^LJWTextCheckerCompetionBlock)(LJWTextCheckerResultInfo *resultInfo);
@@ -36,9 +36,9 @@ static NSString *const RegStringChineseName = @"^[\u4E00-\u9FA5]{2,5}$";
 
 @required;
 
-- (LJWTextResultType)checkTextIsCorrectWithCompletionBlock:(LJWTextCheckerCompetionBlock)completionBlock;
+- (LJWTextCheckingResultType)checkTextIsCorrectWithCompletionBlock:(LJWTextCheckerCompetionBlock)completionBlock;
 
-- (LJWTextResultType)checkTextIsCorrectInGroupWithCompletionBlock:(LJWTextCheckerCompetionBlock)completionBlock;
+- (LJWTextCheckingResultType)checkTextIsCorrectInGroupWithCompletionBlock:(LJWTextCheckerCompetionBlock)completionBlock;
 
 #pragma mark - PropertyMethod
 - (NSString *)errorDescription;

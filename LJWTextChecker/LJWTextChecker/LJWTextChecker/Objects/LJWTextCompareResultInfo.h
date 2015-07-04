@@ -13,6 +13,6 @@
 
 @property (nonatomic, strong) LJWTextCompareConfig *config;
 
-@property (nonatomic, assign) LJWTextResultType resultType;
+@property (nonatomic, assign) LJWTextCheckingResultType resultType;
 
 @end

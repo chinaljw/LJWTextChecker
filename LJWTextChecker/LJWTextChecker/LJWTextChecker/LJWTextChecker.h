@@ -23,7 +23,7 @@ typedef void (^CheckCompleteBlock)();
  *
  *  @return 检查结果枚举
  */
-+ (LJWTextResultType)checkSomeoneTextIsCorrect:(id<LJWTextCheckProtocol>)someone completionBlock:(LJWTextCheckerCompetionBlock)completionBlock;
++ (LJWTextCheckingResultType)checkSomeoneTextIsCorrect:(id<LJWTextCheckProtocol>)someone completionBlock:(LJWTextCheckerCompetionBlock)completionBlock;
 
 /**
  *  检查某个东西的文本是否符合，用于整组检查时
@@ -34,7 +34,7 @@ typedef void (^CheckCompleteBlock)();
  *
  *  @return 结果枚举
  */
-+ (LJWTextResultType)checkSomeoneTextIsCorrectInGroup:(id<LJWTextCheckProtocol>)someone completionBlock:(LJWTextCheckerCompetionBlock)completionBlock;
++ (LJWTextCheckingResultType)checkSomeoneTextIsCorrectInGroup:(id<LJWTextCheckProtocol>)someone completionBlock:(LJWTextCheckerCompetionBlock)completionBlock;
 
 /**
  *  按顺序检查控件数组里的所有控件

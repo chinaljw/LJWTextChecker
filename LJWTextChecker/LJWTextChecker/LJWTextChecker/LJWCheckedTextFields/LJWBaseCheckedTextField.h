@@ -32,6 +32,6 @@ IB_DESIGNABLE
  *
  *  @return 检查的结果枚举
  */
-- (LJWTextResultType)checkTextIsCorrectWithCompletionBlock:(LJWTextCheckerCompetionBlock)completionBlock;
+- (LJWTextCheckingResultType)checkTextIsCorrectWithCompletionBlock:(LJWTextCheckerCompetionBlock)completionBlock;
 
 @end

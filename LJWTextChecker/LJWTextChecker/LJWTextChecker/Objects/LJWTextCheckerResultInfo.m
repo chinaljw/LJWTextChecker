@@ -13,38 +13,44 @@
 - (void)showResult
 {
     
-    //这里是默认的展示检查结果的地方
+    //这里是默认的展示检查结果的地方,使用block回调将不会调用这个方法。
     
-    NSString *resultString = nil;
+    NSString *resultString = self.resultString;
+    
+    NSLog(@"%@", resultString);
+    
+}
+
+- (void)setResultType:(LJWTextCheckingResultType)resultType
+{
+    _resultType = resultType;
     
     switch (self.resultType) {
             
-        case LJWTextResultTypeEmpty:
+        case LJWTextCheckingResultTypeEmpty:
         {
-            resultString = [self.someone emptyDescription];
+            self.resultString = [self.someone emptyDescription];
         }
             break;
-        case LJWTextResultTypeFormatError:
+        case LJWTextCheckingResultTypeFormatError:
         {
-            resultString = [self.someone errorDescription];
+            self.resultString = [self.someone errorDescription];
             
         }
             break;
-        case LJWTextResultTypeCorrect:
+        case LJWTextCheckingResultTypeCorrect:
         {
-            resultString = [NSString stringWithFormat:@"%@ is ok!", self.someone];
+            self.resultString = [NSString stringWithFormat:@"%@ is ok!", self.someone];
         }
             break;
-        case LJWTextResultTypeEeverythingIsOK:
+        case LJWTextCheckingResultTypeEeverythingIsOK:
         {
-            resultString = @"everything is ok!";
+            self.resultString = @"Everything is ok!";
         }
             
         default:
             break;
     }
-    
-    NSLog(@"%@", resultString);
     
 }
 

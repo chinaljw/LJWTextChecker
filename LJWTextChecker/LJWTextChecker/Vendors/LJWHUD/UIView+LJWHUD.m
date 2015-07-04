@@ -9,9 +9,6 @@
 #import "UIView+LJWHUD.h"
 #import <objc/runtime.h>
 
-static char *const LJWMessageViewKey = "LJWMessageViewKey";
-static char *const LJWWaitingViewKey = "LJWWaitingViewKey";
-
 @interface UIView ()
 
 @end
@@ -23,28 +20,28 @@ static char *const LJWWaitingViewKey = "LJWWaitingViewKey";
 @dynamic ljwWaitingView;
 
 #pragma mark - SetterAndGetter
-- (void)setLjwMessageView:(UIView<LJWMessageViewProtocol> *)LJWMessageView
+- (void)setLjwMessageView:(UIView<LJWMessageViewProtocol> *)ljwMessageView
 {
-    [objc_getAssociatedObject(self, LJWMessageViewKey) removeFromSuperview];
+    [objc_getAssociatedObject(self, @selector(ljwMessageView)) removeFromSuperview];
     
-    objc_setAssociatedObject(self, LJWMessageViewKey, LJWMessageView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(ljwMessageView), ljwMessageView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (void)setWaitingView:(UIView *)ljwWaitingView
 {
-    [objc_getAssociatedObject(self, LJWWaitingViewKey) removeFromSuperview];
+    [objc_getAssociatedObject(self, @selector(ljwWaitingView)) removeFromSuperview];
     
-    objc_setAssociatedObject(self, LJWWaitingViewKey, ljwWaitingView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(ljwWaitingView), ljwWaitingView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (UIView<LJWMessageViewProtocol> *)ljwMessageView
 {
-    return objc_getAssociatedObject(self, LJWMessageViewKey);
+    return objc_getAssociatedObject(self, _cmd);
 }
 
 - (UIView *)ljwWaitingView
 {
-    return objc_getAssociatedObject(self, LJWWaitingViewKey);
+    return objc_getAssociatedObject(self, _cmd);
 }
 
 #pragma mark - ljwMessageView
@@ -145,11 +142,15 @@ static char *const LJWWaitingViewKey = "LJWWaitingViewKey";
     
     [self addSubview:self.ljwWaitingView];
     
+//    self.userInteractionEnabled = NO;
+    
 }
 
 - (void)dismissWaitingView
 {
     self.waitingView = nil;
+    
+//    self.userInteractionEnabled = YES;
 }
 
 @end

@@ -86,9 +86,9 @@
     self.contentLabel.text = conent;
 }
 
-- (void)dealloc
-{
+//- (void)dealloc
+//{
 //    NSLog(@"%@ dealloc", self);
-}
+//}
 
 @end

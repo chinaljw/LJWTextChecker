@@ -35,19 +35,19 @@
 }
 
 #pragma  mark - LJWTextCheckProtocol
-- (LJWTextResultType)checkTextIsCorrectWithCompletionBlock:(LJWTextCheckerCompetionBlock)completionBlock
+- (LJWTextCheckingResultType)checkTextIsCorrectWithCompletionBlock:(LJWTextCheckerCompetionBlock)completionBlock
 {
     
     return [LJWTextChecker checkSomeoneTextIsCorrect:self completionBlock:completionBlock];
     
 }
 
-- (LJWTextResultType)checkTextIsCorrectInGroupWithCompletionBlock:(LJWTextCheckerCompetionBlock)completionBlock
+- (LJWTextCheckingResultType)checkTextIsCorrectInGroupWithCompletionBlock:(LJWTextCheckerCompetionBlock)completionBlock
 {
     return [LJWTextChecker checkSomeoneTextIsCorrectInGroup:self completionBlock:completionBlock];
 }
 
-#pragma mark - 
+#pragma mark - TextChanged
 - (void)didTextChanged:(UITextField *)textField
 {
     if (textField.text.length > self.maxTextLength) {

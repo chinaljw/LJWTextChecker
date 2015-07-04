@@ -39,23 +39,23 @@
  *
  *  @return 检查结果枚举
  */
-+ (LJWTextResultType)checkSomeoneTextIsCorrect:(id<LJWTextCheckProtocol>)someone completionBlock:(LJWTextCheckerCompetionBlock)completionBlock
++ (LJWTextCheckingResultType)checkSomeoneTextIsCorrect:(id<LJWTextCheckProtocol>)someone completionBlock:(LJWTextCheckerCompetionBlock)completionBlock
 {
         
     //判断是否为空
     if (![someone allowEmpty] && [self check_SomeoneTextIsEmpty:someone completionBlock:completionBlock])
     {
-        return LJWTextResultTypeEmpty;
+        return LJWTextCheckingResultTypeEmpty;
     }
     
     //判断格式是否正确
     if (![self check_SomeoneTextIsCorrect:someone completionBlock:completionBlock]) {
-        return LJWTextResultTypeFormatError;
+        return LJWTextCheckingResultTypeFormatError;
     }
     
     //展示结果
     LJWTextCheckerResultInfo *info = [[LJWTextCheckerResultInfo alloc] init];
-    info.resultType = LJWTextResultTypeCorrect;
+    info.resultType = LJWTextCheckingResultTypeCorrect;
     info.someone = someone;
     
     if (!completionBlock) {
@@ -66,7 +66,7 @@
         completionBlock(someone);
     }
     
-    return LJWTextResultTypeCorrect;
+    return LJWTextCheckingResultTypeCorrect;
 }
 
 /**
@@ -78,21 +78,21 @@
  *
  *  @return 结果枚举
  */
-+ (LJWTextResultType)checkSomeoneTextIsCorrectInGroup:(id<LJWTextCheckProtocol>)someone completionBlock:(LJWTextCheckerCompetionBlock)completionBlock
++ (LJWTextCheckingResultType)checkSomeoneTextIsCorrectInGroup:(id<LJWTextCheckProtocol>)someone completionBlock:(LJWTextCheckerCompetionBlock)completionBlock
 {
     
     //判断是否为空
     if (![someone allowEmpty] && [self check_SomeoneTextIsEmpty:someone completionBlock:completionBlock])
     {
-        return LJWTextResultTypeEmpty;
+        return LJWTextCheckingResultTypeEmpty;
     }
     
     //判断格式是否正确
     if ([self check_SomeoneTextIsCorrect:someone completionBlock:completionBlock]) {
-        return LJWTextResultTypeFormatError;
+        return LJWTextCheckingResultTypeFormatError;
     }
     
-    return LJWTextResultTypeCorrect;
+    return LJWTextCheckingResultTypeCorrect;
 }
 
 
@@ -104,14 +104,14 @@
  *
  *  @return 结果枚举类型
  */
-+ (LJWTextResultType)check_SomeoneTextIsCorrect:(id<LJWTextCheckProtocol>)someone completionBlock:(LJWTextCheckerCompetionBlock)completionBlock
++ (LJWTextCheckingResultType)check_SomeoneTextIsCorrect:(id<LJWTextCheckProtocol>)someone completionBlock:(LJWTextCheckerCompetionBlock)completionBlock
 {
     
     if (![LJWTextChecker customRegularCheckWithText:[someone checkedText] andRegString:[someone regString]]) {
         
         LJWTextCheckerResultInfo *info = [[LJWTextCheckerResultInfo alloc] init];
-        info.resultType = LJWTextResultTypeFormatError;
         info.someone = someone;
+        info.resultType = LJWTextCheckingResultTypeFormatError;
         
         if (!completionBlock) {
             [self showResultWithResultInfo:info];
@@ -121,11 +121,11 @@
             completionBlock(info);
         }
         
-        return LJWTextResultTypeFormatError;
+        return LJWTextCheckingResultTypeFormatError;
 
     }
     
-    return LJWTextResultTypeCorrect;
+    return LJWTextCheckingResultTypeCorrect;
 }
 
 /**
@@ -136,14 +136,14 @@
  *
  *  @return 返回结果枚举
  */
-+ (LJWTextResultType)check_SomeoneTextIsEmpty:(id<LJWTextCheckProtocol>)someone completionBlock:(LJWTextCheckerCompetionBlock)completionBlock
++ (LJWTextCheckingResultType)check_SomeoneTextIsEmpty:(id<LJWTextCheckProtocol>)someone completionBlock:(LJWTextCheckerCompetionBlock)completionBlock
 {
 
     if ([[someone checkedText] isEqualToString:@""] || ![someone checkedText]) {
     
         LJWTextCheckerResultInfo *info = [[LJWTextCheckerResultInfo alloc] init];
         info.someone = someone;
-        info.resultType = LJWTextResultTypeEmpty;
+        info.resultType = LJWTextCheckingResultTypeEmpty;
         
         if (!completionBlock) {
             [self showResultWithResultInfo:info];
@@ -153,11 +153,11 @@
             completionBlock(info);
         }
         
-        return LJWTextResultTypeEmpty;
+        return LJWTextCheckingResultTypeEmpty;
         
     }
     
-    return LJWTextResultTypeCorrect;
+    return LJWTextCheckingResultTypeCorrect;
     
 }
 
@@ -195,7 +195,7 @@
         
     }
     
-    info.resultType = LJWTextResultTypeEeverythingIsOK;
+    info.resultType = LJWTextCheckingResultTypeEeverythingIsOK;
     info.someone = nil;
     
     if (completionBlock) {
@@ -225,10 +225,11 @@
     
     for (LJWTextCompareConfig *config in configs) {
         
+        info.config = config;
+        
         if ([config compare]) {
             
-            info.resultType = LJWTextResutlTypeUnlike;
-            info.config = config;
+            info.resultType = LJWTextCheckingResultTypeUnlike;
             
             if (completionBlock) {
                 completionBlock(info);
@@ -244,7 +245,7 @@
         
     }
     
-    info.resultType = LJWTextResultTypeEeverythingIsOK;
+    info.resultType = LJWTextCheckingResultTypeEeverythingIsOK;
     
     if (completionBlock) {
         completionBlock(info);
