@@ -1,3 +1,5 @@
+#嘿，兄弟，这有新的控件
+https://github.com/chinaljw/XJJTextChecker
 # LJWTextChecker
 自带正则文本检查的textfield。
 实现了textField的字符数控制的功能。
